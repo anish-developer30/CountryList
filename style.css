@@ -1,0 +1,268 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --color: #333333;
+  --bg-color: #fffff4;
+  --white: #fff;
+  --box: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+body.dark {
+  --white: #333333;
+  --color: #fff;
+  --bg-color: #474747;
+}
+body {
+  background-color: var(--white);
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+.header {
+  padding: 1.5rem 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--box);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: var(--bg-color);
+}
+
+.header .logo {
+  font-size: 2rem;
+  color: var(--color);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.header .icon {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  color: var(--color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.header .icon label {
+  cursor: pointer;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+  gap: 1.5rem;
+}
+
+.box-container .box {
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.4);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: var(--bg-color);
+}
+.box-container .box .img {
+  width: 100%;
+  height: 15rem;
+}
+
+.box-container .box .img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.box-container .box .content {
+  padding: 1rem;
+}
+.box-container .box .content h3 {
+  color: var(--color);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.box-container .box .content h3 span {
+  color: var(--color);
+}
+.box-container .box .content p {
+  color: var(--color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+.box-container .box .content p span {
+  color: var(--color);
+}
+.option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.option .form {
+  display: flex;
+  align-items: center;
+  max-width: 25rem;
+  width: 100%;
+  height: 4rem;
+  border-radius: 0.5rem;
+  background-color: var(--bg-color);
+  border: 0.2rem solid rgba(0, 0, 0, 0.2);
+}
+.option .form i {
+  margin-left: 1rem;
+  color: var(--color);
+  font-size: 1.4rem;
+}
+.option .form input {
+  text-transform: none;
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  background-color: transparent;
+  color: var(--color);
+}
+.option .form input::placeholder {
+  color: var(--color);
+}
+.option select {
+  border: 0.2rem solid rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: var(--bg-color);
+  color: var(--color);
+}
+
+/* ==================== detail page ======================> */
+.detail .back-btn {
+  border: 0.2rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  padding: 0.8rem 2rem;
+  width: 10rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--bg-color);
+}
+
+.back-btn i {
+  font-size: 1.4rem;
+  color: var(--color);
+  font-weight: 600;
+}
+.back-btn span {
+  font-size: 1.4rem;
+  color: var(--color);
+  font-weight: 600;
+}
+
+.flex {
+  margin-top: 2rem;
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.flex .image {
+  flex: 1 1 40rem;
+  height: 30rem;
+}
+.flex .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.flex .content {
+  flex: 1 1 60rem;
+}
+.flex .content h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: var(--color);
+}
+
+.flex .content .box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.flex .content .box .col p {
+  margin: 1rem 0;
+  font-size: 1.6rem;
+  color: var(--color);
+}
+.flex .content .box .col p span {
+  margin-left: 0.5rem;
+}
+.flex .content .border {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.flex .content .border a {
+  border: 0.2rem solid rgba(0, 0, 0, 0.1);
+  padding: 0.3rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  color: var(--color);
+  background-color: var(--bg-color);
+}
+.flex .content .border label {
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: var(--color);
+}
+/* ==================================> */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  section {
+    padding: 2rem;
+  }
+  .header {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .flex .content .box {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}

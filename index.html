@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries List</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="all.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="logo">Countries</a>
+      <div class="icon">
+        <i class="fas fa-moon" id="icon"></i>
+        <label for="icon" id="text"></label>
+      </div>
+    </header>
+    <main>
+      <section class="option">
+        <div class="form">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="search country" />
+        </div>
+
+        <select>
+          <option hidden>filter by region</option>
+          <option value="Africa">Africa</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+          <option value="Americas">Americas</option>
+          <option value="Asia">Asia</option>
+        </select>
+      </section>
+      <section class="box-container"></section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CountryAPI</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="all.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="logo">Countries</a>
+      <div class="icon">
+        <i class="fas fa-moon" id="icon"></i>
+        <label for="icon" id="text"></label>
+      </div>
+    </header>
+    <main>
+      <section class="detail">
+        <div class="back-btn" onclick="history.back()">
+          <i class="fas fa-arrow-left"></i>
+          <span>Back</span>
+        </div>
+
+        <div class="flex">
+          <div class="image">
+            <img src="" alt="" />
+          </div>
+          <div class="content">
+            <h2></h2>
+            <div class="box">
+              <div class="col">
+                <p>native name : <span id="nativename"></span></p>
+                <p>population : <span id="population"></span></p>
+                <p>region :<span id="region"></span></p>
+                <p>sub region :<span id="subregion"></span></p>
+                <p>capital :<span id="capital"></span></p>
+              </div>
+              <div class="col">
+                <p>domain : <span id="domain"></span></p>
+                <p>currencies : <span id="currency"></span></p>
+                <p>currency symbole : <span id="symbol"></span></p>
+                <p>languages : <span id="languages"></span></p>
+              </div>
+            </div>
+            <div class="border">
+              <label>borders :</label>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./detail.js"></script>
+  </body>
+</html>
