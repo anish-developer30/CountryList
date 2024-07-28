@@ -6,7 +6,7 @@ let allData = "";
 
 // https://restcountries.com/v3.1/name/${name}
 //restcountries.com/v3.1/name/${countryname}
-fetch("data.json");
+// fetch("data.json");
 fetch("https://restcountries.com/v3.1/all")
   .then((data) => data.json())
   .then((data) => {
@@ -36,7 +36,7 @@ function renderData(data) {
   data.map((element) => {
     let a = document.createElement("a");
     a.classList.add("box");
-    a.href = `/detail.html?name=${element.name.common}`;
+    a.href = `./detail.html?name=${element.name.common}`;
     let content = `<div class="img">
                    <img src=${element.flags.svg} alt="" />
                 </div>
